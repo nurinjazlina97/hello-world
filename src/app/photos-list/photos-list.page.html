@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>photos-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="response">
+
+<ion-card *ngFor="let photo of response">
+  <img src="{{photo.url}}" />
+  <ion-card-header>
+    <ion-card-subtitle>Destination</ion-card-subtitle>
+    <ion-card-title>{{photo.title}}</ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+</ion-content>
